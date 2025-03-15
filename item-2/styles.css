@@ -1,0 +1,164 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f6;
+}
+
+header {
+  background-color: #cee3f8;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ddeaf6;
+  padding: 10px;
+}
+
+.subreddits h3 {
+  font-size: 16px;
+}
+
+.subreddits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subreddits li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.create-community {
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  background-color: #0079d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Tab container styles */
+.tabs {
+  display: flex;
+  background-color: #f8f9fa;
+  padding: 5px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Styling tab buttons */
+.tab-button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Active tab styling */
+input#tab-hot:checked ~ .tabs label[for="tab-hot"],
+input#tab-new:checked ~ .tabs label[for="tab-new"],
+input#tab-controversial:checked ~ .tabs label[for="tab-controversial"],
+input#tab-top:checked ~ .tabs label[for="tab-top"],
+input#tab-saved:checked ~ .tabs label[for="tab-saved"] {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hide all content sections by default */
+.tab-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+/* Show the selected tab's content */
+input#tab-hot:checked ~ #content-hot,
+input#tab-new:checked ~ #content-new,
+input#tab-controversial:checked ~ #content-controversial,
+input#tab-top:checked ~ #content-top,
+input#tab-saved:checked ~ #content-saved {
+  display: block;
+}
+
+/* Post Details Section */
+.post-details {
+  width: 35%;
+  padding: 10px;
+  background: #f5f5f5;
+  border-left: 1px solid #ccc;
+}
+
+/* Hide all post details by default */
+.details-content {
+  display: none;
+}
+
+/* Show only the selected post */
+#post1:target ~ .post-details #details-post1,
+#post2:target ~ .post-details #details-post2,
+#post3:target ~ .post-details #details-post3 {
+  display: block;
+}
+
+/* Hide default message when a post is selected */
+#post1:target ~ .post-details #default-message,
+#post2:target ~ .post-details #default-message,
+#post3:target ~ .post-details #default-message {
+  display: none;
+}

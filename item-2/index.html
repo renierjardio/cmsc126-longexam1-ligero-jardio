@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Replica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Reddit</div>
+      <div class="user-info">Logged in as 7hundredand77</div>
+    </header>
+    <nav>hello mom</nav>
+    <main>
+      <aside class="sidebar">
+        <div class="subreddits">
+          <h3>Subreddits</h3>
+          <ul>
+            <li>WORLD NEWS</li>
+            <li>TODAYILEARNED</li>
+            <li>WORLDVIEWS</li>
+            <li>WEB DESIGN</li>
+            <li>ATHEIST</li>
+            <li>FUUUUUUUUUUUUUU</li>
+          </ul>
+        </div>
+        <button class="create-community">Create Community</button>
+      </aside>
+      <!-- Tabs for Content Sections -->
+      <div class="tab-container">
+        <input type="radio" id="tab-hot" name="tab" checked />
+        <input type="radio" id="tab-new" name="tab" />
+        <input type="radio" id="tab-controversial" name="tab" />
+        <input type="radio" id="tab-top" name="tab" />
+        <input type="radio" id="tab-saved" name="tab" />
+
+        <div class="tabs">
+          <label for="tab-hot" class="tab-button">what's hot</label>
+          <label for="tab-new" class="tab-button">new</label>
+          <label for="tab-controversial" class="tab-button"
+            >controversial</label
+          >
+          <label for="tab-top" class="tab-button">top</label>
+          <label for="tab-saved" class="tab-button">saved</label>
+        </div>
+
+        <!-- Tabbed Content -->
+        <section class="tab-content" id="content-hot">
+          <section class="content">
+            <div class="post-list">
+              <a href="#post1" class="post-link">
+                <div class="post" id="post1">
+                  <h2>
+                    What do you call 60 guys watching the Super Bowl at home?
+                  </h2>
+                  <p>submitted 19 hours ago by krispkrack</p>
+                  <p>623 comments</p>
+                </div>
+              </a>
+
+              <a href="#post2" class="post-link">
+                <div class="post" id="post2">
+                  <h2>I AM the guy who created this design AMA</h2>
+                  <p>submitted 1 hour ago by 7hundredand77</p>
+                  <p>288 comments</p>
+                </div>
+              </a>
+
+              <a href="#post3" class="post-link">
+                <div class="post" id="post3">
+                  <h2>Use this Chrome addon to block major third parties...</h2>
+                  <p>submitted 11 hours ago by krispkrack</p>
+                  <p>218 comments</p>
+                </div>
+              </a>
+            </div>
+          </section>
+        </section>
+
+        <!-- Post details section -->
+        <aside class="post-details">
+          <div id="default-message">
+            <p>Select a post to view details here.</p>
+          </div>
+
+          <div class="details-content" id="details-post1">
+            <h2>What do you call 60 guys watching the Super Bowl at home?</h2>
+            <p>submitted 19 hours ago by krispkrack</p>
+            <p>623 comments</p>
+            <p>This is a detailed description of the post.</p>
+          </div>
+
+          <div class="details-content" id="details-post2">
+            <h2>I AM the guy who created this design AMA</h2>
+            <p>submitted 1 hour ago by 7hundredand77</p>
+            <p>288 comments</p>
+            <p>More details about the AMA.</p>
+          </div>
+
+          <div class="details-content" id="details-post3">
+            <h2>Use this Chrome addon to block major third parties...</h2>
+            <p>submitted 11 hours ago by krispkrack</p>
+            <p>218 comments</p>
+            <p>How this addon can protect your privacy.</p>
+          </div>
+        </aside>
+
+        <section class="tab-content" id="content-new">
+          <div class="post"></div>
+        </section>
+
+        <section class="tab-content" id="content-controversial">
+          <div class="post"></div>
+        </section>
+
+        <section class="tab-content" id="content-top">
+          <div class="post"></div>
+        </section>
+
+        <section class="tab-content" id="content-saved">
+          <div class="post"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
