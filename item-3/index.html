@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Cooking Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="main-title">Accessible Cooking Guide</h1>
+      <p id="intro">A step-by-step guide to cooking Sinigang!</p>
+    </header>
+
+    <main aria-labelledby="main-title" aria-describedby="intro">
+      <!-- Step 1 -->
+      <section id="step1" class="step" aria-labelledby="step1-title">
+        <h2 id="step1-title">Step 1 of 6: Prepare Ingredients</h2>
+        <img src="assets/image.png" alt="Ingredients for Sinigang" />
+        <p id="step1-desc">
+          Gather and chop all necessary ingredients. These include Pork Belly,
+          String Beans, Eggplant, Daikon Radish, Okra, Water Spinach, Tomatoes,
+          Long Pepper, Onions, Black Pepper, Fish Sauce, and your Young Tamarind
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step2"
+            class="next"
+            tabindex="0"
+            aria-label="Next step: Extract Tamarind Flavor"
+            >Next →</a
+          >
+        </nav>
+      </section>
+
+      <!-- Step 2 -->
+      <section
+        id="step2"
+        class="step"
+        aria-labelledby="step2-title"
+        aria-describedby="step2-desc"
+      >
+        <h2 id="step2-title">Step 2 of 6: Extract Tamarind Flavor</h2>
+        <img src="assets/image1.png" alt="Boiling tamarind for broth" />
+        <p id="step2-desc">
+          Boil fresh tamarind until the broth becomes sour enough.
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step1"
+            class="prev"
+            tabindex="0"
+            aria-label="Previous step: Prepare Ingredients"
+            >← Back</a
+          >
+          <a
+            href="#step3"
+            class="next"
+            tabindex="0"
+            aria-label="Next step: Cook the Meat"
+            >Next →</a
+          >
+        </nav>
+      </section>
+
+      <!-- Step 3 -->
+      <section
+        id="step3"
+        class="step"
+        aria-labelledby="step3-title"
+        aria-describedby="step3-desc"
+      >
+        <h2 id="step3-title">Step 3 of 6: Cook the Meat</h2>
+        <img src="assets/image2.png" alt="Cooking meat in tamarind broth" />
+        <p id="step3-desc">
+          Add the meat to the tamarind broth and let it simmer.
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step2"
+            class="prev"
+            tabindex="0"
+            aria-label="Previous step: Extract Tamarind Flavor"
+            >← Back</a
+          >
+          <a
+            href="#step4"
+            class="next"
+            tabindex="0"
+            aria-label="Next step: Add Vegetables"
+            >Next →</a
+          >
+        </nav>
+      </section>
+
+      <!-- Step 4 -->
+      <section
+        id="step4"
+        class="step"
+        aria-labelledby="step4-title"
+        aria-describedby="step4-desc"
+      >
+        <h2 id="step4-title">Step 4 of 6: Add Vegetables</h2>
+        <img src="assets/image3.png" alt="Adding vegetables to Sinigang" />
+        <p id="step4-desc">
+          Add vegetables one at a time based on their cooking duration.
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step3"
+            class="prev"
+            tabindex="0"
+            aria-label="Previous step: Cook the Meat"
+            >← Back</a
+          >
+          <a
+            href="#step5"
+            class="next"
+            tabindex="0"
+            aria-label="Next step: Season and Finish"
+            >Next →</a
+          >
+        </nav>
+      </section>
+
+      <!-- Step 5 -->
+      <section
+        id="step5"
+        class="step"
+        aria-labelledby="step5-title"
+        aria-describedby="step5-desc"
+      >
+        <h2 id="step5-title">Step 5 of 6: Season and Finish</h2>
+        <img src="assets/image4.png" alt="Seasoning the Sinigang" />
+        <p id="step5-desc">
+          Season the soup to your liking and add delicate vegetables last.
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step4"
+            class="prev"
+            tabindex="0"
+            aria-label="Previous step: Add Vegetables"
+            >← Back</a
+          >
+          <a
+            href="#step6"
+            class="next"
+            tabindex="0"
+            aria-label="Next step: Enjoy!"
+            >Next →</a
+          >
+        </nav>
+      </section>
+
+      <!-- Step 6 -->
+      <section
+        id="step6"
+        class="step"
+        aria-labelledby="step6-title"
+        aria-describedby="step6-desc"
+      >
+        <h2 id="step6-title">Step 6 of 6: Enjoy!</h2>
+        <img src="assets/image5.png" alt="Plated Sinigang" />
+        <p id="step6-desc">
+          Your Sinigang is ready to serve—enjoy your delicious meal!
+        </p>
+        <nav aria-label="Step navigation">
+          <a
+            href="#step5"
+            class="prev"
+            tabindex="0"
+            aria-label="Previous step: Season and Finish"
+            >← Back</a
+          >
+          <a
+            href="#step1"
+            class="restart"
+            tabindex="0"
+            aria-label="Restart the guide"
+            >Restart</a
+          >
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>
