@@ -8,25 +8,60 @@
   </head>
   <body>
     <header>
-      <div class="logo">Reddit</div>
-      <div class="user-info">Logged in as 7hundredand77</div>
+      <div class="logo">
+        <img src="assets/redditLogo.png" alt="redditLogo" />
+      </div>
     </header>
-    <nav>hello mom</nav>
+
+    <nav>
+        <div class="nav-bar">
+            <div class="user-info">
+                <b><a href="#">7hundredand77</a></b>
+                <span>, you're back!</span> |
+                <b><a href="#">preferences</a></b> |
+                <b><a href="#">logout?</a></b> :(
+            </div>
+        </div>
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" class="search-bar">
+                <button class="search-btn">🔍</button>
+            </div>
+            <button class="msg-btn">
+                <img src="assets/messageIcon.png" alt="Message Icon" /> <b>1</b> New Msg
+            </button>
+            
+            <button class="links-btn"><b>53,211</b> Link</button>
+            <button class="comments-btn"> <b>4,887</b> Comment</button>
+        </div>        
+    </nav>
+
+
     <main>
       <aside class="sidebar">
         <div class="subreddits">
-          <h3>Subreddits</h3>
           <ul>
+            <li>FRONT PAGE</li>
+            <li>PICS</li>
+            <li>SCIENCE</li>
+            <li>TECHNOLOGY</li>
+            <li>ASK REDDIT</li>
+            <li>FUNNY</li>
+            <li>WTF</li>
+            <li>IAMA</li>
             <li>WORLD NEWS</li>
             <li>TODAYILEARNED</li>
-            <li>WORLDVIEWS</li>
-            <li>WEB DESIGN</li>
+            <li>WORLDNEWS</li>
+            <li>WEBDESIGN</li>
             <li>ATHEIST</li>
-            <li>FUUUUUUUUUUUUUU</li>
+            <li>FFFFUUUUUUUUUU</li>
           </ul>
         </div>
+        <a href=""> (MORE)</a>
         <button class="create-community">Create Community</button>
       </aside>
+
+
       <!-- Tabs for Content Sections -->
       <div class="tab-container">
         <input type="radio" id="tab-hot" name="tab" checked />
@@ -55,7 +90,7 @@
                     What do you call 60 guys watching the Super Bowl at home?
                   </h2>
                   <p>submitted 19 hours ago by krispkrack</p>
-                  <p>623 comments</p>
+                  <p><b> 623 comments</b></p>
                 </div>
               </a>
 
@@ -64,7 +99,7 @@
                   <h2>I AM the guy who created this design AMA</h2>
                   <p>submitted 1 hour ago by 7hundredand77</p>
                   <p>288 comments</p>
-                </div>
+                </div> 
               </a>
 
               <a href="#post3" class="post-link">
@@ -78,49 +113,74 @@
           </section>
         </section>
 
-        <!-- Post details section -->
-        <aside class="post-details">
-          <div id="default-message">
-            <p>Select a post to view details here.</p>
-          </div>
-
-          <div class="details-content" id="details-post1">
-            <h2>What do you call 60 guys watching the Super Bowl at home?</h2>
-            <p>submitted 19 hours ago by krispkrack</p>
-            <p>623 comments</p>
-            <p>This is a detailed description of the post.</p>
-          </div>
-
-          <div class="details-content" id="details-post2">
-            <h2>I AM the guy who created this design AMA</h2>
-            <p>submitted 1 hour ago by 7hundredand77</p>
-            <p>288 comments</p>
-            <p>More details about the AMA.</p>
-          </div>
-
-          <div class="details-content" id="details-post3">
-            <h2>Use this Chrome addon to block major third parties...</h2>
-            <p>submitted 11 hours ago by krispkrack</p>
-            <p>218 comments</p>
-            <p>How this addon can protect your privacy.</p>
-          </div>
-        </aside>
-
         <section class="tab-content" id="content-new">
-          <div class="post"></div>
+            <section class="content">
+                <div class="post-list">
+                    <a href="#post1" class="post-link">
+                      <div class="post" id="post1">
+                        <h2>
+                          What do you call 60 guys watching the Super Bowl at home?
+                        </h2>
+                        <p>submitted 19 hours ago by krispkrack</p>
+                        <p><b> 623 comments</b></p>
+                      </div>
+                    </a>
+                  </div>
+            </section>
         </section>
 
         <section class="tab-content" id="content-controversial">
-          <div class="post"></div>
+            <div class="post-list">
+                <a href="#post3" class="post-link">
+                  <div class="post" id="post3">
+                    <h2>Use this Chrome addon to block major third parties...</h2>
+                    <p>submitted 11 hours ago by krispkrack</p>
+                    <p>218 comments</p>
+                  </div>
+                </a>
+              </div>
+            </section>
         </section>
 
         <section class="tab-content" id="content-top">
-          <div class="post"></div>
+            <div class="post-list">
+                <a href="#post1" class="post-link">
+                  <div class="post" id="post1">
+                    <h2>
+                      What do you call 60 guys watching the Super Bowl at home?
+                    </h2>
+                    <p>submitted 19 hours ago by krispkrack</p>
+                    <p><b> 623 comments</b></p>
+                  </div>
+                </a>
+              </div>
+            </section>
         </section>
 
-        <section class="tab-content" id="content-saved">
-          <div class="post"></div>
+         <section class="tab-content" id="content-saved">
+            <div class="post-list">
+                <a href="#post1" class="post-link">
+                  <div class="post" id="post1">
+                    <h2>
+                      What do you call 60 guys watching the Super Bowl at home?
+                    </h2>
+                    <p>submitted 19 hours ago by krispkrack</p>
+                    <p><b> 623 comments</b></p>
+                  </div>
+                </a>
+  
+                <a href="#post3" class="post-link">
+                  <div class="post" id="post3">
+                    <h2>Use this Chrome addon to block major third parties...</h2>
+                    <p>submitted 11 hours ago by krispkrack</p>
+                    <p>218 comments</p>
+                  </div>
+                </a>
+              </div>
+            </section>
         </section>
+
+
       </div>
     </main>
   </body>
