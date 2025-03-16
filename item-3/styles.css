@@ -1,26 +1,87 @@
-/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   text-align: center;
+  justify-content: center;
   margin: 0;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 header {
+  background-color: #5ea832;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
   margin-bottom: 20px;
+  color: white;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+header p {
+  font-size: x-large;
+  margin-right: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 16px;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+header img:hover {
+  filter: brightness(0.8);
+}
+
+main {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-intro h2 {
+  font-size: 2rem;
+}
+
+.recipe-intro p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 /* Step blocks */
+.steps-container {
+  width: 90%;
+  text-align: center;
+}
+
 .step {
-  display: none; /* Hide all steps by default */
-  max-width: 600px;
+  display: none;
+  max-width: 80%;
   margin: auto;
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: opacity 0.5s ease;
 }
 
@@ -29,14 +90,20 @@ header {
   display: block;
 }
 
-/* Ensure Step 1 is visible if no hash or on #step1 */
-#step1:target,
+.step:focus-within {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Step 1 is visible */
 body:not(:has(:target)) #step1 {
   display: block;
 }
 
 /* Navigation */
 nav {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -51,21 +118,21 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover,
+a:focus,
 nav a:focus {
+  outline: 2px solid #ff5722;
+  outline-offset: 4px;
+}
+
+a:hover,
+nav a:hover {
   background-color: #0056b3;
 }
 
 /* Image styling */
 img {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   border-radius: 5px;
   margin: 10px 0;
-}
-
-/* Focus indicator for accessibility */
-a:focus {
-  outline: 2px solid #ff5722;
-  outline-offset: 4px;
 }
