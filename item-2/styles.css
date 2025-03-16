@@ -144,13 +144,39 @@ nav {
 .sidebar {
   width: 15%;
   background-color: #eef8fe;
-  padding: 10px;
   color: #585e63;
   font-weight: bold;
   font-size: 12px;
   border: 1px solid #888;
 }
 
+.sidebar-text {
+  background-color: #ddedfe;
+  border: 1px solid #d2e1ec;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 85%;
+}
+
+.title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #446ba1;
+  font-size: 14px;
+}
+
+.sub {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.more-link {
+  color: #446ba1;
+}
+
+.subreddits {
+  padding: 10px;
+}
 .subreddits h3 {
   font-size: 16px;
 }
@@ -165,14 +191,25 @@ nav {
   cursor: pointer;
 }
 
-.create-community {
-  margin-top: 10px;
+.ad-caption {
+  color: #747d7e;
+  font-size: 11px;
+  margin: 3px 0;
+  text-align: right;
+  font-weight: bold;
+}
+
+.ad-image {
+  margin: 5px 0;
   padding: 5px;
-  width: 100%;
-  background-color: #0079d3;
-  color: white;
-  border: none;
-  cursor: pointer;
+  margin-bottom: 5px;
+  width: 85%;
+}
+
+.ad-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
 }
 
 /* Main */
@@ -673,7 +710,7 @@ input#tab-saved:checked ~ #content-saved {
   padding: 8px;
   margin-top: 10px;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #444;
   background-color: #f0f0f0;
